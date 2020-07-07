@@ -133,6 +133,53 @@ GRAPH_LIST = [
     "summit_demo/lgs/summit_oskar2_1536_nodes.json",
     "summit_demo/lgs/summit_oskar2_6144_nodes.json",
     "summit_demo/lgs/test_stats.graph",
+
+    "daliuge/test/dropmake/metis.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/cont_img.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/lofar_std.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather_empty.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather_simple.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/test_grpby_gather.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/chiles_simple.json",
+
+    "daliuge/test/dropmake/metis.graph",
+    "daliuge/test/graphs/end-to-end-20191107-132429.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-114906.graph",
+    "daliuge/test/graphs/test-20190830-110556.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-115147.graph",
+    "daliuge/test/graphs/test-20190927-140636.graph",
+    "daliuge/test/graphs/summit-ingest-20190927-151729.graph",
+    "daliuge/test/graphs/dingo.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-114709.graph",
+    "daliuge/test/graphs/shell-app-20191107-133402.graph",
+    "daliuge/test/graphs/summit_ingest_final.graph",
+    "daliuge/test/graphs/summit-ingest-20190927-151304.graph",
+    "daliuge/test/graphs/cycle-20191107-130401.graph",
+    "daliuge/test/graphs/SummitIngest_Demo.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-114123.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-115436.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-101246.graph",
+    "daliuge/test/graphs/summit-ingest-20191107-125719.graph",
+    "daliuge/test/graphs/summit-ingest-20190927-163056.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-112931.graph",
+    "daliuge/test/graphs/test-20190920-144632.graph",
+    "daliuge/test/graphs/shell-app-demo-20190927-141218.graph",
+    "daliuge/test/graphs/summit-ingest-20190927-141354.graph",
+    "daliuge/test/graphs/summit-ingest-20191004-110714.graph",
+    "daliuge/test/graphs/summit-ingest-20190927-144027.graph",
+    "daliuge/test/graphs/testMKN.graph",
+    "daliuge/test/graphs/summit-ingest-20190927-142435.graph",
+    "daliuge/test/graphs/summit-ingest-20191003-100159.graph",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/test-20190830-110556.graph",
+    "daliuge/OpenAPI/tests/test.graph",
+
+    "jacal/jacal/test/daliuge/test_basic_imaging.json",
+    "jacal/jacal/test/daliuge/test_grid_dumping.json",
+    "jacal/jacal/test/daliuge/test_major_cycle.json",
+    "jacal/jacal/test/daliuge/test_simple_calibration.json",
+    "jacal/jacal/test/daliuge/test_lsqr_calibration.json",
+    "jacal/jacal/test/daliuge/test_ska_spectral_line.json",
 ]
 
 OUTPUT_DIR = "output"
@@ -161,8 +208,8 @@ for graph_filename in GRAPH_LIST:
 
     #continue
 
-    #DEVNULL
-    DEVNULL = open(os.devnull, 'w')
+    # open file /dev/null so we can pipe stdout from update script there
+    DEV_NULL = open(os.devnull, 'w')
 
     # call the translator script
-    process = subprocess.call(['ts-node', 'updateGraph.ts', full_path, output_filename], cwd=TRANSLATE_SCRIPT_DIR, stdout=DEVNULL)
+    process = subprocess.call(['ts-node', 'updateGraph.ts', full_path, output_filename], cwd=TRANSLATE_SCRIPT_DIR, stdout=DEV_NULL)
