@@ -93,71 +93,75 @@ GRAPH_LIST = [
     "daliuge-logical-graphs/Tests/test_seq_gather.json",
     "daliuge-logical-graphs/Tests/test_stream_multiple.json",
     "daliuge-logical-graphs/Tests/test_stream.json",
-    #
-    # "EAGLE_test_repo/SP-602/YAN-251-001.graph",
-    # "EAGLE_test_repo/SP-602/YAN-251-001.palette",
-    #
-    # "EAGLE_test_repo/dingo/dingo.graph",
-    # "EAGLE_test_repo/dingo/dingo.palette",
-    # "EAGLE_test_repo/dingo/dingo_output_param.graph",
-    # "EAGLE_test_repo/dingo/mock-dingo.graph",
-    # "EAGLE_test_repo/dingo/test_exclusive.graph",
-    #
-    # "EAGLE_test_repo/simple_tests/simple.palette",
-    # "EAGLE_test_repo/simple_tests/simple_01_basic.graph",
-    # "EAGLE_test_repo/simple_tests/simple_02_mkn.graph",
-    # "EAGLE_test_repo/simple_tests/simple_03_mkn_plus_fen.graph",
-    #
-    # "EAGLE_test_repo/wsclean/wsclean.graph",
-    #
-    # "EAGLE_test_repo/CImage.graph",
-    # "EAGLE_test_repo/CImage.palette",
-    #
-    # "EAGLE_test_repo/ChilesSplitDeploy.graph",
-    # "EAGLE_test_repo/Chiles.palette",
-    #
-    # "EAGLE_test_repo/LEAP-Work-Flow.graph",
-    # "EAGLE_test_repo/LEAP-Work-Flow.palette",
-    #
-    # "EAGLE_test_repo/SummitIngest_Demo.graph",
-    #
-    # "EAGLE_test_repo/HelloWorld.json.graph",
-    # "EAGLE_test_repo/HelloWorld.palette",
-    #
-    # "EAGLE_test_repo/defaultTemplate.palette",
-    #
-    # "summit_demo/lgs/summit_oskar2_006_nodes.json",
-    # "summit_demo/lgs/summit_oskar2_024_nodes.json",
-    # "summit_demo/lgs/summit_oskar2_096_nodes.json",
-    # "summit_demo/lgs/summit_oskar2_384_nodes.json",
-    # "summit_demo/lgs/summit_oskar2_1536_nodes.json",
-    # "summit_demo/lgs/summit_oskar2_6144_nodes.json",
-    # "summit_demo/lgs/test_stats.graph",
-    #
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/cont_img.json",
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/lofar_std.json",
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather_empty.json",
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather.json",
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather_simple.json",
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/test_grpby_gather.json",
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/chiles_simple.json",
-    #
-    # "daliuge/daliuge-translator/test/dropmake/logical_graphs/test-20190830-110556.graph",
-    # "daliuge/OpenAPI/tests/test.graph",
-    #
-    # "jacal/jacal/test/daliuge/test_basic_imaging.json",
-    # "jacal/jacal/test/daliuge/test_grid_dumping.json",
-    # "jacal/jacal/test/daliuge/test_major_cycle.json",
-    # "jacal/jacal/test/daliuge/test_simple_calibration.json",
-    # "jacal/jacal/test/daliuge/test_lsqr_calibration.json",
-    # "jacal/jacal/test/daliuge/test_ska_spectral_line.json",
+
+    "EAGLE_test_repo/SP-602/YAN-251-001.graph",
+    "EAGLE_test_repo/SP-602/YAN-251-001.palette",
+
+    "EAGLE_test_repo/dingo/dingo.graph",
+    "EAGLE_test_repo/dingo/dingo.palette",
+    "EAGLE_test_repo/dingo/dingo_output_param.graph",
+    "EAGLE_test_repo/dingo/mock-dingo.graph",
+    "EAGLE_test_repo/dingo/test_exclusive.graph",
+
+    "EAGLE_test_repo/simple_tests/simple.palette",
+    "EAGLE_test_repo/simple_tests/simple_01_basic.graph",
+    "EAGLE_test_repo/simple_tests/simple_02_mkn.graph",
+    "EAGLE_test_repo/simple_tests/simple_03_mkn_plus_fen.graph",
+
+    "EAGLE_test_repo/wsclean/wsclean.graph",
+
+    "EAGLE_test_repo/CImage.graph",
+    "EAGLE_test_repo/CImage.palette",
+
+    "EAGLE_test_repo/ChilesSplitDeploy.graph",
+    "EAGLE_test_repo/Chiles.palette",
+
+    "EAGLE_test_repo/LEAP-Work-Flow.graph",
+    "EAGLE_test_repo/LEAP-Work-Flow.palette",
+
+    "EAGLE_test_repo/SummitIngest_Demo.graph",
+
+    "EAGLE_test_repo/HelloWorld.json.graph",
+    "EAGLE_test_repo/HelloWorld.palette",
+
+    "EAGLE_test_repo/defaultTemplate.palette",
+
+    "summit_demo/lgs/summit_oskar2_006_nodes.json",
+    "summit_demo/lgs/summit_oskar2_024_nodes.json",
+    "summit_demo/lgs/summit_oskar2_096_nodes.json",
+    "summit_demo/lgs/summit_oskar2_384_nodes.json",
+    "summit_demo/lgs/summit_oskar2_1536_nodes.json",
+    "summit_demo/lgs/summit_oskar2_6144_nodes.json",
+    "summit_demo/lgs/test_stats.graph",
+
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/cont_img.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/lofar_std.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather_empty.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/eagle_gather_simple.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/test_grpby_gather.json",
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/chiles_simple.json",
+
+    "daliuge/daliuge-translator/test/dropmake/logical_graphs/test-20190830-110556.graph",
+    "daliuge/OpenAPI/tests/test.graph",
+
+    "jacal/jacal/test/daliuge/test_basic_imaging.json",
+    "jacal/jacal/test/daliuge/test_grid_dumping.json",
+    "jacal/jacal/test/daliuge/test_major_cycle.json",
+    "jacal/jacal/test/daliuge/test_simple_calibration.json",
+    "jacal/jacal/test/daliuge/test_lsqr_calibration.json",
+    "jacal/jacal/test/daliuge/test_ska_spectral_line.json",
 ]
 
-TRANSLATE_WORKING_DIR = "../EAGLE/tools"
+OUTPUT_DIR = "output"
+TRANSLATE_SCRIPT_DIR = "../EAGLE/tools"
 
 for graph_filename in GRAPH_LIST:
     # get full path
     full_path = os.path.join(os.getcwd(), "../", graph_filename)
+
+    # create output file name
+    output_filename = os.path.join(os.getcwd(), OUTPUT_DIR, graph_filename)
 
     # check input file exists
     exists = os.path.exists(full_path)
@@ -166,10 +170,17 @@ for graph_filename in GRAPH_LIST:
         print("ERROR: File " + full_path + " does not exist! Aborting.")
         break
 
+    # if output dir does not exist, create it
+    output_directory = os.path.dirname(output_filename)
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+
+    print(full_path + " -> " + output_filename)
+
     #continue
 
     # open file /dev/null so we can pipe stdout from update script there
     DEV_NULL = open(os.devnull, 'w')
 
     # call the translator script
-    process = subprocess.call(['ts-node', 'loadSaveGraph.ts', full_path], cwd=TRANSLATE_WORKING_DIR, stdout=DEV_NULL)
+    process = subprocess.call(['ts-node', 'updateGraph.ts', full_path, output_filename], cwd=TRANSLATE_SCRIPT_DIR, stdout=DEV_NULL)
